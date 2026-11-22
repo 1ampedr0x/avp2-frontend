@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <main class="jogo">
+        <h1>Memofrutas</h1>
+
+        <section class="placar">
+            <div id="jogador1" class="jogador">
+                Jogador 1: <span id="pontos1">0</span>
+            </div>
+            <div id="jogador2" class="jogador">
+                Jogador 2: <span id="pontos2">0</span>
+            </div>
+        </section>
+
+        <p id="mensagem" class="mensagem">Vez do Jogador 1</p>
+
+        <div id="tabuleiro" class="tabuleiro">
+            <button id="carta1" class="carta" onclick="clicar(this)">🍎</button>
+            <button id="carta2" class="carta" onclick="clicar(this)">🍎</button>
+            <button id="carta3" class="carta" onclick="clicar(this)">🍒</button>
+            <button id="carta4" class="carta" onclick="clicar(this)">🍒</button>
+            <button id="carta5" class="carta" onclick="clicar(this)">🍇</button>
+            <button id="carta6" class="carta" onclick="clicar(this)">🍇</button>
+            <button id="carta7" class="carta" onclick="clicar(this)">🍓</button>
+            <button id="carta8" class="carta" onclick="clicar(this)">🍓</button>
+            <button id="carta9" class="carta" onclick="clicar(this)">🍊</button>
+            <button id="carta10" class="carta" onclick="clicar(this)">🍊</button>
+            <button id="carta11" class="carta" onclick="clicar(this)">🍉</button>
+            <button id="carta12" class="carta" onclick="clicar(this)">🍉</button>
+            <button id="carta13" class="carta" onclick="clicar(this)">🍍</button>
+            <button id="carta14" class="carta" onclick="clicar(this)">🍍</button>
+            <button id="carta15" class="carta" onclick="clicar(this)">🥝</button>
+            <button id="carta16" class="carta" onclick="clicar(this)">🥝</button>
+        </div>
+
+        <p id="resultado" class="resultado" hidden></p>
+        <button id="reiniciar" hidden>Jogar novamente</button>
+    </main>
+</body>
+</html>
